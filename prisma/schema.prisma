@@ -8,8 +8,11 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
-model Portfolio {
+model User {
   id Int @id @map("_id")
-  name String @unique
-  content Json @unique
+  elo Int @default(1000)
+  username String
+  profile Json
+  password String
+  email String @unique
 }

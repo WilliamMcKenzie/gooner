@@ -1,6 +1,7 @@
 const project_themes = [
   "note taking",
-  "calculator"
+  "calculator",
+  ""
 ]
 
 const use = [
@@ -36,6 +37,15 @@ const adjectives = [
   "dedicated",
 ]
 
+{["bridging t"]} {glaze} {}
+
+const verbs = [
+  "building",
+  "creating",
+  "innovating",
+  "crafting",
+]
+
 const glaze = [
   "powerful",
   "innovative",
@@ -54,13 +64,6 @@ const things = [
   "system",
   "API",
   "b2b saas",
-]
-
-const verbs = [
-  "building",
-  "creating",
-  "innovating",
-  "crafting",
 ]
 
 const title = [
