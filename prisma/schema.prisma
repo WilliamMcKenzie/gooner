@@ -15,10 +15,3 @@ model User {
   password String
   email String @unique
 }
-
-// Profile will be json
-// {
-  username : "william",
-  images : ["url to image"],
-  description : "hobbies, job blah blah blah"
-}

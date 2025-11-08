@@ -1,6 +1,7 @@
 "use client"
 
-import Image from "next/image";
+import styles from "./components/landing/style.module.css";
+import Navbar from "./components/landing/navbar";
 
 export default function Home() {
   async function generate() {
@@ -8,10 +9,20 @@ export default function Home() {
   }
 
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <button onClick={generate}>
-          Generate
-      </button>
-    </div>
+    <main className={styles.main}>
+      <Navbar/>
+      <div className={styles.hero}>
+        <img className={styles.rizzchess} src={"rizzchess.png"}/>
+        <h3>
+          if tinder had elo.
+        </h3>
+        <button className="btn">
+          try it out
+        </button>
+        <button className="btn">
+          see devpost
+        </button>
+      </div>
+    </main>
   );
 }
